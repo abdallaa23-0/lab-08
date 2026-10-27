@@ -55,7 +55,7 @@ class WizardTest {
     }
     @Test
     fun train_andnotenoughmana(){
-        evilWizard.mana = 4//less than what we want by 1
+        evilWizard.mana = 2//less than what we want by 1
         val initialPower = evilWizard.spellPower
         evilWizard.train()
 

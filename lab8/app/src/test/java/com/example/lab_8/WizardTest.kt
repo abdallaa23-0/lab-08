@@ -46,7 +46,7 @@ class WizardTest {
         assertEquals(70, evilWizard.mana)
     }
     @Test
-    fun train_enough_mana_powerIncreasesandManaDecrease(){
+    fun train_enough_mana_powerincreasesandmanadecreases(){
         val initialPower = evilWizard.spellPower
         val initialMana = evilWizard.mana
         evilWizard.train()
@@ -54,7 +54,7 @@ class WizardTest {
         assertEquals(initialMana-5, evilWizard.mana)
     }
     @Test
-    fun train_andnotenoughmana(){
+    fun train_andnotenoughmana_nothingchanges(){
         evilWizard.mana = 2//less than what we want by 1
         val initialPower = evilWizard.spellPower
         evilWizard.train()
